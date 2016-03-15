@@ -1,24 +1,30 @@
-# Programação Perl
+# ProgramaÃ§Ã£o Perl
 
 
-##Introdução
-A linguagem Perl foi desenvolvida por Larry Wall em 1987, essa linguagem é multiplataforma usada principalmente em aplicações de CGI para o web.
-Perl é uma linguagem que possui muitos recursos para cadeias de caracteres, por isso é uma linguagem que se destaca quando o assunto é tratar de textos.
-O Principal proposito da linguagem é a flexibilidade e versatilidade de fazer códigos funcionais.
+##IntroduÃ§Ã£o
+A linguagem Perl foi desenvolvida por Larry Wall em 1987, essa linguagem Ã© multiplataforma usada principalmente em aplicaÃ§Ãµes de CGI para o web.
+Perl Ã© uma linguagem que possui muitos recursos para cadeias de caracteres, por isso Ã© uma linguagem que se destaca quando o assunto Ã© tratar de textos.
+O Principal proposito da linguagem Ã© a flexibilidade e versatilidade de fazer cÃ³digos funcionais.
 
 
-##Origens e Influências
-As origens de Perl se dão principalmente pela utilização de outras duas linguagens, C e Snobol. E é uma linguagem que deu origem principalmente a linguagem Ruby on Rais que está sendo muito utilizada hoje em dia.
+##Origens e InfluÃªncias
+As origens de Perl se dÃ£o principalmente pela utilizaÃ§Ã£o de outras duas linguagens, C e Snobol. E Ã© uma linguagem que deu origem principalmente a linguagem Ruby on Rais que estÃ¡ sendo muito utilizada hoje em dia.
 
-## Classificação
-Perl é uma linguagem que possui muitas características, como Orientação a Objetos, porém seu principal uso é Aplicações Web e foi nesse ramo que ela fez melhorias.
-Essa linguagem tem grandes características de Whriteability com sua sintaxe simplificada porém em Readability já não é tão boa assim. 
+## ClassificaÃ§Ã£o
+Perl Ã© uma linguagem que possui muitas caracterÃ­sticas, como OrientaÃ§Ã£o a Objetos, Ã© uma linguagem interpretada, porÃ©m seu principal uso Ã© AplicaÃ§Ãµes Web e foi nesse ramo que ela fez melhorias.
+Essa linguagem tem grandes caracterÃ­sticas de Whriteability com sua sintaxe simplificada porÃ©m em Readability jÃ¡ nÃ£o Ã© tÃ£o boa assim. 
 
 
-## Avaliação Comparativa
-Comparando Perl com C podemos perceber uma significativa diferença em relação ao desempenho, Perl possui scripts muito mais lentos, a legibilidade de seus códigos é muito complicada também.
-Porém Perl é uma linguagem excelente para a manipulação de textos e arquivos, tornando isso muito mais facil do que C.
+## AvaliaÃ§Ã£o Comparativa
+Comparando Perl com C podemos perceber uma significativa diferenÃ§a em relaÃ§Ã£o ao desempenho, Perl possui scripts muito mais lentos, a legibilidade de seus cÃ³digos Ã© muito complicada tambÃ©m.
+PorÃ©m Perl Ã© uma linguagem excelente para a manipulaÃ§Ã£o de textos e arquivos, tornando isso muito mais facil do que C.
 
-## Conclusão
-Perl é uma linguagem muito versátil, multiplataforma e com muitas facilidades para manipulação de dados, porém em relação a outros aspectos, como desempenho, perde para outras linguagens.
-Cada programador deve ver o principal uso de suas aplicações antes de fazer a escolha de que linguagem usar, se suas aplicações manipulam muitos dados, Perl será perfeita para seu uso.
+## ConclusÃ£o
+Perl Ã© uma linguagem muito versÃ¡til, multiplataforma e com muitas facilidades para manipulaÃ§Ã£o de dados, porÃ©m em relaÃ§Ã£o a outros aspectos, como desempenho, perde para outras linguagens.
+Cada programador deve ver o principal uso de suas aplicaÃ§Ãµes antes de fazer a escolha de que linguagem usar, se suas aplicaÃ§Ãµes manipulam muitos dados, Perl serÃ¡ perfeita para seu uso.
+
+## Bibliografia
+
+* Site da linguagem: https://www.perl.org/
+* Wikipedia: https://pt.wikipedia.org/wiki/Perl
+* Outro Site: http://search.cpan.org/~garu/POD2-PT_BR-0.06/lib/POD2/PT_BR/perlintro.pod

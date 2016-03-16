@@ -16,11 +16,12 @@ Essa linguagem tem grandes características de Whriteability com sua sintaxe sim
 
 ## Código Significativo
 Como Perl é muito usado em sistemas web, aqui está um exemplo de codigo para ler o nome e sobrenome de uma pessoa e imprimir na página do site:
+
+```
 local ($buffer, @pairs, $pair, $name, $value, %FORM);
 // Read in text
 $ENV{'REQUEST_METHOD'} =~ tr/a-z/A-Z/;
-if ($ENV{'REQUEST_METHOD'} eq "GET")
-{
+if ($ENV{'REQUEST_METHOD'} eq "GET")>{
    $buffer = $ENV{'QUERY_STRING'};
 }
 // Split information into name/value pairs
@@ -55,6 +56,7 @@ Last Name: <input type="text" name="last_name">
 
 <input type="submit" value="Submit">
 </FORM>
+```
 
 ## Avaliação Comparativa
 Comparando Perl com C podemos perceber uma significativa diferença em relação ao desempenho, Perl possui scripts muito mais lentos, a legibilidade de seus códigos é muito complicada também.
@@ -64,6 +66,7 @@ Por Exempo:
 Para percorrer um veto em C é preciso saber o tamanho do vetor ou usar o comando strlen(), mas se o vetor estiver dinamicamente alocado deverá ser usado ponteiro para poder percorrer o vetor.
 Já em Perl é muito mis simples pois o comando foreach permite fazer um for para cada elemento presente no vetor, sem precisar saber quantos elementos existem.
 
+```
 Imprimindo os elementos de um vetor em Pearl:
   @list = (2, 20, 30, 40, 50);
   // foreach loop execution
@@ -83,6 +86,7 @@ Imprimindo os elementos de um vetor em C:
       imprime (le->prox);
    }
 }
+```
 
 ## Conclusão
 Perl é uma linguagem muito versátil, multiplataforma e com muitas facilidades para manipulação de dados, porém em relação a outros aspectos, como desempenho, perde para outras linguagens.

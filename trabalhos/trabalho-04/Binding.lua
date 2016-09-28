@@ -5,6 +5,15 @@ bullets = {} -- array dos tiros que serão desenhados
 canShoot = true
 canShootTimerMax = 0.6 -- Está sincronizado com o som!!!
 canShootTimer = canShootTimerMax
+--[[
+Nome: canShootTimerMax.
+Propriedade: tipo.
+Binding time: Compilação.
+Explicação: Como o valor da variável é estático, seu tipo é definido em tempo de execução.
+
+obs: procurei saber sobre variáveis estáticas e li em alguns lugares que lua coloca as variáveis globais como static, por isso não declarei na frente do nome
+mas caso isso seja falso é só declarar a variável como static.
+]]
 
 bulletImg = nil
 enemyImg = nil
@@ -15,10 +24,11 @@ createEnemyTimer = createEnemyTimerMax
 vivo = false
 placar = 0
 
+
 startBool = true
 --[[
 Nome: true.
-Propriedades: Variável booleana.
+Propriedades: Sintaxe booleana.
 Binding time: Design
 Explicação: Ao projetar o design da linguagem, decide-se se a linguagem aceitará ou não o tipo de variavel booleana.
 Ou se será feito alguma outra interpretação como 1 e 0 em outras linguagens.

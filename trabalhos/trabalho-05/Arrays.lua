@@ -3,9 +3,8 @@ enemies = {}  --array dos inimigos criados
 bullets = {} -- array dos tiros que serão desenhados
 --[[
 	A tabela bullets possui o mesmo escopo e tempo de vida, pois é declarada como uma estrutura global, e pode
-ser acessada durante toda a vida do programa e de qualquer parte do codigo. Neste programa ela é declarada 
-fora de todas as funções para poder ser vista em todo o programa, e seus itens só são adicionados durante 
-a execução de acordo com os comandos do usuário.
+ser acessada durante toda a vida do programa e de qualquer parte do codigo. Dessa forma a tabela sendo uma variável global 
+seu nome é amarrado em tempo de compilação e seus itens só são adicionados durante a execução de acordo com os comandos do usuário.
 	Esta tabela possui tanto a inserção de objetos, quando o usuário clica em um botão, quanto a remoção do mesmo
 objeto, assim que ele ultrapassa o limite da tela.
 	O mesmo pode ser dito da tabela enemies, que possui caracteristicas semelhantes a tabela bullets.

@@ -1,13 +1,7 @@
 player = { x = 50, y = 250, speed = 200, img = nil }
 enemies = {}  --array dos inimigos criados
 bullets = {} -- array dos tiros que serão desenhados
---[[
-Nome: Tabela "bullets".
-Propriedade: Criação da Tabela vazia que será usada para guardar os tiros.
-Binding time: Compilação.
-Explicação: Ao ser compilado em sua máquina virtual, o codigo Lua cria um espaço em memória para a tabela.
-Porém seus itens só serão adicionados em tempo de execução.
-]]
+
 canShoot = true
 canShootTimerMax = 0.6 -- Está sincronizado com o som!!!
 canShootTimer = canShootTimerMax
@@ -24,7 +18,7 @@ placar = 0
 startBool = true
 --[[
 Nome: true.
-Propriedades: Tipo de variável booleana.
+Propriedades: Variável booleana.
 Binding time: Design
 Explicação: Ao projetar o design da linguagem, decide-se se a linguagem aceitará ou não o tipo de variavel booleana.
 Ou se será feito alguma outra interpretação como 1 e 0 em outras linguagens.
@@ -35,11 +29,10 @@ GameOverText = "Game Over"
 ResetText = "Pressione R para Reiniciar ou ESC para Sair"
 fontSize = 40
 --[[
-Nome: Variável "fontSize".
-Propriedade: Endereço de memória Global do programa principal.
+Nome: fontSize.
+Propriedade: Endereço.
 Binding time: Compilação.
-Explicação: Como a variável é global e seu valor ja é definido no inicio do programa, seu endereço pode
-ser determinado no tempo de compilação do programa.
+Explicação: Como a variável é global e seu valor seu endereço é alocado na pilha em tempo de compilação.
 ]]
 
 function CheckCollision(x1,y1,w1,h1, x2,y2,w2,h2)
@@ -94,13 +87,6 @@ function love.update(dt)
 	-- Criando cada tiro
 		newBullet = { x = player.x + 70 , y = player.y + 30, img = bulletImg} --, sound = bulletSound }
 		table.insert(bullets, newBullet)
-		--[[
-		Nome: table.insert.
-		Propriedade: Insere um novo item a tabela.
-		Binding time: Execução.
-		Explicação: Ao clicar no botão espaço um novo item é adicionado a tabela "bullets".
-		Isso só pode ser feito em tempo de execução pois depende da interação com o usuário.
-		]]
 		canShoot = false 
 		canShootTimer = canShootTimerMax
 	end
@@ -122,6 +108,12 @@ function love.update(dt)
 		end
 	-- Atualiza a posição dos inimigos
 	for i, enemy in ipairs(enemies) do
+		--[[
+		Nome: i.
+		Propriedade: Endereço
+		Binding time: Execução
+		Explicação: como a variável i é local e seu escopo é apenas esse for seu endereço é alocado na pilha em tempo de execução.
+		]]
 		enemy.x = enemy.x - (300 * dt)
 
 		if enemy.y < 0 then -- remove o inimigo se ele passar do player(depois colocar para o jogo acabar caso isso ocorra)
@@ -202,14 +194,13 @@ end
 		vivo = true
 	end
 end
-
-function love.draw()
 --[[
-Nome: Função "love.draw".
-Propriedade: como a função é declarada.
-Binding time: Design.
-Explicação: No momento de Design da linguagem os projetistas decidem como será feito a declaração das funções.
+Nome: end.
+Propriedade: Sintaxe
+Binding time: Design
+Explicação: no tempo de design define-se como será o fim dos blocos da linguagem
 ]]
+function love.draw()
 	if startBool then
 		love.graphics.setFont(fontAux)
 		love.graphics.print(StartText,350,200)

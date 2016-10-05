@@ -35,6 +35,7 @@ function CheckCollision(x1,y1,w1,h1, x2,y2,w2,h2)
          y1 < y2+h2 and
          y2 < y1+h1
 end
+--Nesta função acima é checado se as extremidades entre 2 objetos passados então se cruzando.
 
 function love.load(dt)
 	--Configurações de fundo e fonte
@@ -125,6 +126,12 @@ function love.update(dt)
 			placar = placar + 1
 		end
 	end
+--[[
+Aqui em cima é feito a verificaçã de colisões entre os tiros e os inimigos e se a função CheckCollision retornar verdadeira
+o inimigo é removido da tabela enemies e o tiro removido da tabela bullets. Abaixo é feita a verificação de colisão 
+entre o personagem e os inimigos e da mesma forma caso a função retorne verdadeiro o inimigo é removido da tabela e o personagem
+passa do estao vivo = true para false.
+]]
 
 	if CheckCollision(enemy.x, enemy.y, 70, 70, player.x, player.y, 70, 70) 
 	and vivo then

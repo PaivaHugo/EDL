@@ -12,7 +12,7 @@ As origens de Perl se dão principalmente pela utilização de outras duas lingu
 
 ## Classificação
 Perl é uma linguagem que possui muitas características, como Orientação a Objetos, é uma linguagem interpretada, porém seu principal uso é Aplicações Web e foi nesse ramo que ela fez melhorias.
-Essa linguagem tem grandes características de Whriteability com sua sintaxe simplificada porém em Readability já não é tão boa assim. 
+Essa linguagem tem grandes características de Writeability com sua sintaxe simplificada porém em Readability já não é tão boa assim. 
 
 ## Código Significativo
 Como Perl é muito usado em sistemas web, aqui está um exemplo de codigo para ler o nome e sobrenome de uma pessoa e imprimir na página do site:

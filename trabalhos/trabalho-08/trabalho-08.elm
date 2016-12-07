@@ -13,6 +13,7 @@ type Exp = Add Exp Exp
 
 type Prog = Attr String Exp
           | Seq Prog Prog
+          | If Prog Prog
 
 e1 : Exp
 e1 = Add (Num 9) (Num 1)
@@ -37,6 +38,11 @@ evalProg s env =
                 val = (evalExp exp env)
             in
                 \ask -> if ask==var then val else (env ask)
+        If condicao pT pF ->
+            if(evalEXP condicao env) /=0 then
+                (evalProg pT env)
+            else
+                (evalProg pF env)
 
 lang : Prog -> Float
 lang p = ((evalProg p zero) "ret")
@@ -49,5 +55,13 @@ p2 = Seq
         (Attr "x"   (Num 11))
         (Attr "ret" (Add (Var "x") (Num 9)))
 
+p3 =   (Seq
+            (Attr "x" (Num 1))
+            (If (Var "x")
+                (Attr "ret" (Mult (Num 3) (Num 7)))
+                (Attr "ret" (Div (Num 20) (Num 5))))
+        )
+
 --main = text (toString (lang p1))
-main = text (toString (lang p2))
+--main = text (toString (lang p2))
+main = text (toString (lang p3))
